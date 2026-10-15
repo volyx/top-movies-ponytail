@@ -1,0 +1,18 @@
+[package]
+name = "top-movies"
+version = "0.1.0"
+edition = "2021"
+description = "Print the top movies by average rating from a MovieLens-style ratings file"
+license = "MIT"
+
+[[bin]]
+name = "top-movies"
+path = "src/main.rs"
+
+# No dependencies on purpose: builds offline, works anywhere Rust is installed.
+[dependencies]
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1

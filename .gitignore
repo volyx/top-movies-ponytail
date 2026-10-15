@@ -1,0 +1,7 @@
+# Dataset (download separately, see README.md)
+archive/
+
+# Rust build output
+target/
+
+.DS_Store
